@@ -1,4 +1,11 @@
 """
-String handling is important.  We can break a string into pieces to help us look at parts one at a time using the string.split function.
-Have the user enter a sentence or paragraph and gives a word count.
+String handling is important.  
+We can break a string into pieces to help us look at parts one at a time using the string.split function.
+Have the user enter a sentence or paragraph and gives a word count.\
+
 """
+
+paragraph = input("Enter your paragraph: ")
+Plist = paragraph.split(" ")
+length = len(Plist)
+print(f"Your word length is: {length}")

@@ -8,7 +8,17 @@ ranks = "A23456789TJQK"
 suits = "CDHS"
 
 def createDeck():
-  return 
+  global ranks, suits
+  clubs = [(i + "C") for i in ranks]
+  diamonds = [(i + "D") for i in ranks]
+  hearts = [(i + "H") for i in ranks]
+  spades = [(i + "S") for i in ranks]
+  all = [clubs, diamonds, hearts, spades]
+  all = [i for i in (clubs + diamonds + hearts + spades)]
+
+
+
+  return all
 
 def main():
   deck = createDeck()

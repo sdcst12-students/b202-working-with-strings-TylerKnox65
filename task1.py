@@ -15,8 +15,15 @@ def replaceDog(input):
     return
     str - the modified string
     '''
-    modifiedString = input
-
+    
+    modifiedString = input.split(" ")
+    for i in modifiedString:
+        if i == "dog":
+            num = modifiedString.index(i)
+            modifiedString.pop(num)
+            modifiedString.insert(num, "kitty") #♠
+    modifiedString = " ".join(modifiedString)
+    print(modifiedString)
     return modifiedString
 
 

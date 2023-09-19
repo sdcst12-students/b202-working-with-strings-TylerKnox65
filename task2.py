@@ -1,7 +1,9 @@
 #!python3
 '''
 ##### Task 2
-Take a string and make sure that it is a proper sentence, with only the first letter capitalized and the rest of the sentence in lower case. We will assume that the sentence never includes names that require capitalization.
+Take a string and make sure that it is a proper sentence, 
+with only the first letter capitalized and the rest of the sentence in lower case. 
+We will assume that the sentence never includes names that require capitalization.
 (2 points)
 '''
 
@@ -13,7 +15,10 @@ def properCaps(input):
     return
     str - proper capitalized string
     '''
-    return
+    modi = input.lower()
+    modi = modi.capitalize()
+    print(modi)
+    return modi
 
 
 if __name__ == "__main__":
