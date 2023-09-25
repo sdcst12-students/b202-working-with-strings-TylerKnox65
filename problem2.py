@@ -58,6 +58,10 @@ print
 html = [x for x in html]
 html = list(html)
 print(len(html))
+for i in html:
+    if i == "":
+        html.pop(html.index(i))
+html = "".join(html)
 print(html)
 n = 0
 '''
